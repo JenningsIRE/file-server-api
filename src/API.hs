@@ -47,8 +47,5 @@ data ResponseData = ResponseData { response :: String
 -- is Post, then there will be a single ReqBody element that defines the type being transmitted. The return type for
 -- each method is noted in the last element in the :> chain.
 
-type API = "load_environment_variables" :> QueryParam "name" String :> Get '[JSON] ResponseData
-      :<|> "getREADME"                  :> Get '[JSON] ResponseData
-      :<|> "storeMessage"               :> ReqBody '[JSON] Message  :> Post '[JSON] Bool
-      :<|> "searchMessage"              :> QueryParam "name" String :> Get '[JSON] [Message]
-      :<|> "performRESTCall"            :> QueryParam "filter" String  :> Get '[JSON] ResponseData
+type API = "putFile"               :> ReqBody '[JSON] Message  :> Post '[JSON] Bool
+      :<|> "getFile"              :> QueryParam "name" String :> Get '[JSON] [Message]
