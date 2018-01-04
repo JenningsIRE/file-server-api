@@ -19,10 +19,10 @@ restAPI = Proxy
 -- | The function type of the interface here.
 -- Each function matches one of the endpoints in type API from UseHaskellAPI.hs
 
-putFile :: Message -> ClientM Bool
+postFile :: Message -> ClientM Bool
 getFile :: Maybe String -> ClientM [Message]
 
 -- | The following provides the implementations of these types
 -- Note that the order of the functions must match the endpoints in the type API from UseHaskell.hs
 
-(putFile :<|> getFile) = client restAPI
+(postFile :<|> getFile) = client restAPI
