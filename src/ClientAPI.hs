@@ -13,8 +13,11 @@ import           Servant.Client
 import           API
 
 
-restAPI :: Proxy API
-restAPI = Proxy
+restFileAPI :: Proxy FileAPI
+restFileAPI = Proxy
+
+restDirectoryAPI :: Proxy DirectoryAPI
+restDirectoryAPI = Proxy
 
 -- | The function type of the interface here.
 -- Each function matches one of the endpoints in type API from UseHaskellAPI.hs
@@ -22,7 +25,11 @@ restAPI = Proxy
 postFile :: Message -> ClientM Bool
 getFile :: Maybe String -> ClientM [Message]
 
+
+postDirectory :: Message -> ClientM Bool
+getDirectory :: Maybe String -> ClientM [Message]
 -- | The following provides the implementations of these types
 -- Note that the order of the functions must match the endpoints in the type API from UseHaskell.hs
 
-(postFile :<|> getFile) = client restAPI
+(postFile :<|> getFile) = client restFileAPI
+(postDirectory :<|> getDirectory) = client restDirectoryAPI
