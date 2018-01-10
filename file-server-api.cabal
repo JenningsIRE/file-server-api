@@ -21,6 +21,7 @@ library
   exposed-modules:     Lib
                      , API
                      , ClientAPI
+                     , ServerAPI
 
   build-depends:       base >= 4.7 && < 5
                      , servant
