@@ -52,3 +52,5 @@ type FileAPI = "postFile"               :> ReqBody '[JSON] Message  :> Post '[JS
 
 type DirectoryAPI = "postDirectory"               :> ReqBody '[JSON] Message  :> Post '[JSON] [Message]
                 :<|> "getDirectory"              :> QueryParam "name" String :> Get '[JSON] [Message]
+
+type InterServerAPI = "registerFS"         :> ReqBody '[JSON] Message :> Post '[JSON] Bool
