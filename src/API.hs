@@ -50,5 +50,5 @@ data ResponseData = ResponseData { response :: String
 type FileAPI = "postFile"               :> ReqBody '[JSON] Message  :> Post '[JSON] Bool
            :<|> "getFile"              :> QueryParam "name" String :> Get '[JSON] [Message]
 
-type DirectoryAPI = "postDirectory"               :> ReqBody '[JSON] Message  :> Post '[JSON] Bool
+type DirectoryAPI = "postDirectory"               :> ReqBody '[JSON] Message  :> Post '[JSON] [Message]
                 :<|> "getDirectory"              :> QueryParam "name" String :> Get '[JSON] [Message]

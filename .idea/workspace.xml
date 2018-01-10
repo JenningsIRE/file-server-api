@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/API.hs" afterPath="$PROJECT_DIR$/src/API.hs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ClientAPI.hs" afterPath="$PROJECT_DIR$/src/ClientAPI.hs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stack.yaml" afterPath="$PROJECT_DIR$/stack.yaml" />
     </list>
     <ignored path="$PROJECT_DIR$/.stack-work/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -41,8 +40,8 @@
       <file leaf-file-name="API.hs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/API.hs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="755">
-              <caret line="53" column="34" lean-forward="false" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
+            <state relative-caret-position="724">
+              <caret line="52" column="103" lean-forward="false" selection-start-line="52" selection-start-column="103" selection-end-line="52" selection-end-column="103" />
               <folding />
             </state>
           </provider>
@@ -61,8 +60,8 @@
       <file leaf-file-name="stack.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stack.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+            <state relative-caret-position="675">
+              <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
               <folding>
                 <marker date="1515521303355" expanded="true" signature="674:678" ph="lts-9.17" />
                 <marker date="1515521303355" expanded="true" signature="1456:1617" ph="packages: &lt;1 item&gt;" />
@@ -93,8 +92,8 @@
       <list>
         <option value="$PROJECT_DIR$/file-server-api.cabal" />
         <option value="$PROJECT_DIR$/stack.yaml" />
-        <option value="$PROJECT_DIR$/src/API.hs" />
         <option value="$PROJECT_DIR$/src/ClientAPI.hs" />
+        <option value="$PROJECT_DIR$/src/API.hs" />
       </list>
     </option>
   </component>
@@ -105,7 +104,6 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="840" />
     <option name="y" value="23" />
     <option name="width" value="840" />
     <option name="height" value="961" />
@@ -129,6 +127,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -147,7 +146,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -273,15 +271,16 @@
       <workItem from="1515094943552" duration="3107000" />
       <workItem from="1515455165424" duration="3150000" />
       <workItem from="1515521203402" duration="387000" />
-      <workItem from="1515541930445" duration="1519000" />
+      <workItem from="1515541930445" duration="2728000" />
+      <workItem from="1515598149132" duration="121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12110000" />
+    <option name="totallyTimeSpent" value="13440000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="840" y="23" width="840" height="961" extended-state="0" />
+    <frame x="0" y="23" width="840" height="961" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -324,6 +323,49 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Lib.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClientAPI.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/API.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="34" lean-forward="false" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file-server-api.cabal">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="7" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stack.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding>
+            <marker date="1515521303355" expanded="true" signature="674:678" ph="lts-9.17" />
+            <marker date="1515521303355" expanded="true" signature="1456:1617" ph="packages: &lt;1 item&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ClientAPI.hs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -506,8 +548,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stack.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        <state relative-caret-position="675">
+          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
           <folding>
             <marker date="1515521303355" expanded="true" signature="674:678" ph="lts-9.17" />
             <marker date="1515521303355" expanded="true" signature="1456:1617" ph="packages: &lt;1 item&gt;" />
@@ -525,8 +567,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/API.hs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="755">
-          <caret line="53" column="34" lean-forward="false" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
+        <state relative-caret-position="724">
+          <caret line="52" column="103" lean-forward="false" selection-start-line="52" selection-start-column="103" selection-end-line="52" selection-end-column="103" />
           <folding />
         </state>
       </provider>
