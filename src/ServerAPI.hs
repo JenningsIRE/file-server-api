@@ -16,10 +16,9 @@ import           Servant.API
 import           Servant.Client
 import           API
 
--- Inter server communication API...
-restInterServerAPI :: Proxy InterServerAPI
-restInterServerAPI = Proxy
+interServerAPI :: Proxy InterServerAPI
+interServerAPI = Proxy
 
-registerFS :: Message -> ClientM Bool
+addServer :: Message -> ClientM Bool
 
-(registerFS) = client restInterServerAPI
+(addServer) = client interServerAPI

@@ -28,6 +28,12 @@ data Message = Message { name    :: String
                        , message :: String
                        } deriving (Show, Generic, FromJSON, ToJSON, ToBSON, FromBSON)
 
+data DirectoryResponse = DirectoryResponse { fileName    :: String
+                                           , ip          :: String
+                                           , port        :: String
+                                           , timestamp   :: String
+                                           } deriving (Show, Generic, FromJSON, ToJSON, ToBSON, FromBSON)
+
 deriving instance FromBSON String  -- we need these as BSON does not provide
 deriving instance ToBSON   String
 
@@ -53,4 +59,7 @@ type FileAPI = "postFile"               :> ReqBody '[JSON] Message  :> Post '[JS
 type DirectoryAPI = "postDirectory"               :> ReqBody '[JSON] Message  :> Post '[JSON] [Message]
                 :<|> "getDirectory"              :> QueryParam "name" String :> Get '[JSON] [Message]
 
-type InterServerAPI = "registerFS"         :> ReqBody '[JSON] Message :> Post '[JSON] Bool
+type InterServerAPI = "addServer"         :> ReqBody '[JSON] Message :> Post '[JSON] Bool
+
+type LockAPI = "lockFile"               :> ReqBody '[JSON] Message  :> Post '[JSON] Bool
+           :<|> "unlockFile"               :> ReqBody '[JSON] Message  :> Post '[JSON] Bool
