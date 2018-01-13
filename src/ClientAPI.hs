@@ -27,7 +27,7 @@ getFile :: Maybe String -> ClientM [Message]
 
 
 postDirectory :: Message -> ClientM [Message]
-getDirectory :: Maybe String -> ClientM [Message]
+getDirectory :: Message -> ClientM [DirectoryResponse]
 
 lockFile :: Message -> ClientM Bool
 unlockFile :: Message -> ClientM Bool
